@@ -16,10 +16,14 @@ body {
     margin: auto;
     padding: 1rem;
     border: white solid 2px;
+}
+
+#inputForm {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 #projectDiv {
@@ -30,3 +34,4 @@ body {
     padding: 3rem;
     border: white solid 2px;
 }
+
