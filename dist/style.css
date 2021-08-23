@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+    background-image: linear-gradient(to right, rgba(83, 83, 83, 0), rgb(78, 78, 78));
+}
+
+#mainDiv {
+    text-align: center;
+    height: 20vh;
+    width: 50%;
+    margin: auto;
+    padding: 1rem;
+    border: white solid 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#projectDiv {
+    text-align: center;
+    height: 70vh;
+    width: 80vw;
+    margin: auto;
+    padding: 3rem;
+    border: white solid 2px;
+}
