@@ -1,11 +1,13 @@
+import { newToDo } from './newToDo';
+
 function generatePage() {
     contentDiv = document.getElementById('content');
 
     mainDiv = document.createElement('div');
-    mainDiv.innerText = 'Main Div';
+    mainDiv.innerText = 'What do you need to do, today?';
     mainDiv.id = 'mainDiv';
     projectDiv = document.createElement('div');
-    projectDiv.innerText = 'Project Div';
+    projectDiv.innerText = 'Current Projects';
     projectDiv.id = 'projectDiv';
 
 
@@ -38,12 +40,22 @@ function generateForm() {
     priorityCheck.type = 'checkbox';
     priorityCheck.innerHTML = 'Urgent?';
 
+    submitButton = document.createElement('button');
+    submitButton.innerText = 'Submit';
+    submitButton.id = 'submitButton';
+    submitButton.type = 'submit';
+
     inputForm.appendChild(titleInput);
     inputForm.appendChild(descInput);
     inputForm.appendChild(dueDateInput);
     inputForm.appendChild(priorityCheck);
+    mainDiv.appendChild(submitButton);
     mainDiv.appendChild(inputForm);
 
+
+    submitButton.addEventListener('click', function() {
+        newToDo();
+    })
 }
 
 module.exports = { generatePage, generateForm };
