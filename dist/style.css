@@ -5,6 +5,7 @@
 }
 
 body {
+    height: 100vh;
     background-color: whitesmoke;
     background-image: linear-gradient(to bottom, rgba(83, 83, 83, 0), rgb(78, 78, 78));
 }
@@ -14,6 +15,7 @@ body {
     height: 20vh;
     width: 50%;
     margin: auto;
+    margin-bottom: 1rem;
     padding: 1rem;
     border: white solid 2px;
 }
@@ -28,10 +30,10 @@ body {
 
 #projectDiv {
     text-align: center;
-    height: 80vh;
+    height: 70vh;
     width: 80vw;
     margin: auto;
-    padding: 3rem;
+    padding: 2rem;
     border: white solid 2px;
 }
 

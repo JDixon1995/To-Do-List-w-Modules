@@ -1,4 +1,6 @@
-import { newToDo } from './newToDo';
+
+const toDoObjectArray = [];
+const projectArray1 = [];
 
 function generatePage() {
     contentDiv = document.getElementById('content');
@@ -54,7 +56,7 @@ function generateForm() {
 
 
     submitButton.addEventListener('click', function() {
-        newToDo();
+        
     })
 }
 
