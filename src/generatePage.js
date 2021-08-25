@@ -1,3 +1,4 @@
+const { newToDo } = require("./newToDo");
 
 const toDoObjectArray = [];
 const projectArray1 = [];
@@ -76,7 +77,7 @@ function generateForm() {
     mainDiv.appendChild(submitButton);
 
     submitButton.addEventListener('click', function() {
-        
+        newToDo();
     })
 }
 

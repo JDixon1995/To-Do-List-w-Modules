@@ -9,11 +9,15 @@ function newToDo() {
     };
 
 
-    const titleInputValue = document.getElementById('titleInput').value;
-    const descInputValue = document.getElementById('descInput').value;
-    const dueDateInputValue = document.getElementById('dueDateInput').value;
-    const priorityCheckValue = document.getElementById('priorityCheck').value;
- 
+    const titleInputField = document.getElementById('titleInput');
+    const descInputField = document.getElementById('descInput');
+    const dueDateInputField = document.getElementById('dueDateInput');
+    const priorityCheckField = document.getElementById('priorityCheck');
+    
+    let titleInputValue = titleInputField.value;
+    let descInputValue = descInputField.value;
+    let dueDateInputValue = dueDateInputField.value;
+    let priorityCheckValue = priorityCheckField.value;
 
     let newToDoObject = new ToDo(
         title = titleInputValue,
@@ -21,6 +25,12 @@ function newToDo() {
         dueDate = dueDateInputValue,
         priority = priorityCheckValue
     );
+
+    titleInputField.value = '';
+    descInputField.value = '';
+    dueDateInputField.value = '';
+
+        console.log(newToDoObject);
 }
 
 module.exports = { newToDo };
