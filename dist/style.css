@@ -14,10 +14,21 @@ h1 {
     text-align: center;
 }
 
+button {
+    font-size: 1.2rem;
+}
+
+button:hover {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
 #mainDiv {
     display: flex;
     flex-direction: row;
     text-align: center;
+    justify-content: space-between;
     height: 20vh;
     width: 50%;
     margin: auto;
@@ -29,7 +40,7 @@ h1 {
 #textDiv {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
 }
@@ -37,7 +48,7 @@ h1 {
 #inputForm {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
 }
