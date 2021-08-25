@@ -1,6 +1,8 @@
 
 function newToDo() {
 
+    const toDoObjectArray = [];
+
     function ToDo(title, description, dueDate, priority) {
         this.title = title,
         this.description = description,
@@ -26,11 +28,13 @@ function newToDo() {
         priority = priorityCheckValue
     );
 
+    toDoObjectArray.push(newToDoObject);
+
     titleInputField.value = '';
     descInputField.value = '';
     dueDateInputField.value = '';
 
-        console.log(newToDoObject);
+        console.log(toDoObjectArray);
 }
 
 module.exports = { newToDo };

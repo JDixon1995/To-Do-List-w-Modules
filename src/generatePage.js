@@ -1,6 +1,5 @@
 const { newToDo } = require("./newToDo");
 
-const toDoObjectArray = [];
 const projectArray1 = [];
 
 function generatePage() {
