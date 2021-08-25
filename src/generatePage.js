@@ -5,8 +5,10 @@ const projectArray1 = [];
 function generatePage() {
     contentDiv = document.getElementById('content');
 
+    header = document.createElement('h1');
+    header.innerText = 'What do you need to do today?';
+    contentDiv.appendChild(header);
     mainDiv = document.createElement('div');
-    mainDiv.innerText = 'What do you need to do, today?';
     mainDiv.id = 'mainDiv';
     projectDiv = document.createElement('div');
     projectDiv.innerText = 'Current Projects';
@@ -19,6 +21,24 @@ function generatePage() {
 
 function generateForm() {
     mainDiv = document.getElementById('mainDiv');
+
+    textDiv = document.createElement('div');
+    textDiv.id = 'textDiv';
+    titleText = document.createElement('h5');
+    titleText.innerText = 'Title';
+    descriptionText = document.createElement('h5');
+    descriptionText.innerText = 'Description';
+    dueDateText = document.createElement('h5');
+    dueDateText.innerText = 'Due Date';
+    priorityText = document.createElement('h5');
+    priorityText.innerText = 'Urgent?';
+
+    textDiv.appendChild(titleText);
+    textDiv.appendChild(descriptionText);
+    textDiv.appendChild(dueDateText);
+    textDiv.appendChild(priorityText);
+
+    mainDiv.appendChild(textDiv);
 
     inputForm = document.createElement('form');
     inputForm.id = 'inputForm';
@@ -51,9 +71,9 @@ function generateForm() {
     inputForm.appendChild(descInput);
     inputForm.appendChild(dueDateInput);
     inputForm.appendChild(priorityCheck);
-    mainDiv.appendChild(submitButton);
-    mainDiv.appendChild(inputForm);
 
+    mainDiv.appendChild(inputForm);
+    mainDiv.appendChild(submitButton);
 
     submitButton.addEventListener('click', function() {
         
