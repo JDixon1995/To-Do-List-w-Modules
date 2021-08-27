@@ -1,7 +1,26 @@
 
 function newToDo() {
 
-    const toDoObjectArray = [];
+    const toDoObjectArray = [
+        {
+            "title": "Wash Laundry",
+            "description": "They're piling up",
+            "dueDate": "08-28-21",
+            "priority": false
+        },
+        {
+            "title":"Pay Rent",
+            "description": "It's due.",
+            "dueDate": "09-01-21",
+            "priority": true
+        },
+        {
+            "title": "Wash Car",
+            "description": "It's getting dirty",
+            "dueDate":"09-07-21",
+            "priority": false
+        }
+    ];
 
     function ToDo(title, description, dueDate, priority) {
         this.title = title,
