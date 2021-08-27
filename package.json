@@ -1,0 +1,25 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JDixon1995/To-Do-List-w-Modules.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JDixon1995/To-Do-List-w-Modules/issues"
+  },
+  "homepage": "https://github.com/JDixon1995/To-Do-List-w-Modules#readme"
+}
