@@ -1,4 +1,4 @@
-const { newToDo } = require("./newToDo");
+const { newToDo, displayToDoObjectArray } = require("./newToDo");
 
 const projectArray1 = [];
 
@@ -79,5 +79,5 @@ function generateForm() {
         newToDo();
     })
 }
-
+displayToDoObjectArray();
 module.exports = { generatePage, generateForm };
