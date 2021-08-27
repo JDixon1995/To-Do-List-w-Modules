@@ -19,7 +19,7 @@ const toDoObjectArray = [
     }
 ];
 
-function displayToDoJSObject() {
+function displayToDoJSObjects() {
     const projectDiv = document.getElementById('projectDiv');
 
     for(let i = 0; i < toDoObjectArray.length; i++) {
@@ -52,3 +52,5 @@ function displayToDoJSObject() {
         projectDiv.appendChild(toDo);
     }
 }
+
+module.exports = { displayToDoJSObjects };
