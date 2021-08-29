@@ -8,8 +8,9 @@ function generatePage() {
     contentDiv.appendChild(header);
     mainDiv = document.createElement('div');
     mainDiv.id = 'mainDiv';
+    projectHeader = document.createElement('h5');
+    projectHeader.innerText = 'Current Project';
     projectDiv = document.createElement('div');
-    projectDiv.innerText = 'Current Projects';
     projectDiv.id = 'projectDiv';
 
 
