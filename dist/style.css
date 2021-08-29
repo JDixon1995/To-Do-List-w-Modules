@@ -60,5 +60,14 @@ button:hover {
     margin: auto;
     padding: 2rem;
     border: white solid 2px;
+    display: flex;
+    flex-direction: row;
 }
 
+.todo-item {
+    width: 10rem;
+}
+
+li {
+    list-style: none;
+}
