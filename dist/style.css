@@ -35,6 +35,7 @@ button:hover {
     margin-bottom: 1rem;
     padding: 1rem;
     border: white solid 2px;
+    border-radius: 2rem;
 }
 
 #textDiv {
@@ -54,6 +55,8 @@ button:hover {
 }
 
 #projectDiv {
+    background-color: whitesmoke;
+    background-image: linear-gradient(to bottom, white, black);
     text-align: center;
     height: 70vh;
     width: 80vw;
@@ -62,6 +65,7 @@ button:hover {
     border: white solid 2px;
     display: flex;
     flex-direction: row;
+    border-radius: 3rem;
 }
 
 .todo-item {

@@ -16,6 +16,12 @@ const toDoObjectArray = [
         "description": "It's getting dirty",
         "dueDate":"09-07-21",
         "priority": false
+    },
+    {
+        "title": "Sort Book Collection",
+        "description": "It's messy",
+        "dueDate": "10-01-21",
+        "priority": false
     }
 ];
 
