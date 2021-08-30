@@ -74,9 +74,6 @@ function generateForm() {
     mainDiv.appendChild(inputForm);
     mainDiv.appendChild(submitButton);
 
-    submitButton.addEventListener('click', function() {
-        newToDo();
-    })
 }
 
 module.exports = { generatePage, generateForm };
