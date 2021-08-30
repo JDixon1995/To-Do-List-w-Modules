@@ -4,7 +4,7 @@ function generatePage() {
     contentDiv = document.getElementById('content');
 
     header = document.createElement('h1');
-    header.innerText = 'What do you need to do today?';
+    header.innerText = 'To Do List';
     contentDiv.appendChild(header);
     mainDiv = document.createElement('div');
     mainDiv.id = 'mainDiv';

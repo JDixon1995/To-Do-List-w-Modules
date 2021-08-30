@@ -49,11 +49,11 @@ function displayToDoJSObjects() {
             toDo.closest('ul').remove();
         })
 
+        toDo.appendChild(deleteButton);
         toDo.appendChild(toDoTitle);
         toDo.appendChild(toDoDesc);
         toDo.appendChild(toDoDueDate);
         toDo.appendChild(toDoPriority);
-        toDo.appendChild(deleteButton);
 
         projectDiv.appendChild(toDo);
     }
@@ -92,11 +92,11 @@ function newToDo() {
             toDo.closest('ul').remove();
         })
 
+        toDo.appendChild(deleteButton);
         toDo.appendChild(toDoTitle);
         toDo.appendChild(toDoDesc);
         toDo.appendChild(toDoDueDate);
         toDo.appendChild(toDoPriority);
-        toDo.appendChild(deleteButton);
         projectDiv.appendChild(toDo);
 
     let newToDoObject = new ToDo(
