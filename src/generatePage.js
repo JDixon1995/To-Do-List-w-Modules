@@ -76,4 +76,29 @@ function generateForm() {
 
 }
 
-module.exports = { generatePage, generateForm };
+function generateProjectForm() {
+    mainDiv = document.getElementById('mainDiv');
+
+    projectFormDiv = document.createElement('div');
+    projectFormDiv.id = 'projectFormDiv';
+    newProjectInput = document.createElement('input');
+    newProjectInput.id = 'newProjectInput';
+    newProjectDueDateInput = document.createElement('input');
+    newProjectDueDateInput.type = 'date';
+
+    projectTextDiv = document.createElement('div');
+    projectText = document.createElement('h5');
+    projectText.innerText = 'New Project';
+    projectDueDate = document.createElement('h5');
+    projectDueDate.innerText = 'Project Due Date';
+
+    projectTextDiv.appendChild(projectText);
+    projectTextDiv.appendChild(projectDueDate);
+
+    projectFormDiv.appendChild(projectTextDiv);
+    projectFormDiv.appendChild(newProjectInput);
+    projectFormDiv.appendChild(newProjectDueDateInput);
+    mainDiv.appendChild(projectFormDiv)
+}
+
+module.exports = { generatePage, generateForm, generateProjectForm};
