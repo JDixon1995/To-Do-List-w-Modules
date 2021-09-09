@@ -33,7 +33,7 @@ button:hover {
     justify-content: space-between;
     background-image: linear-gradient(to bottom, white, grey);
     height: 20vh;
-    width: 30%;
+    width: 60%;
     margin: auto;
     margin-bottom: 1rem;
     padding: 1rem;
@@ -49,10 +49,26 @@ button:hover {
     text-align: center;
 }
 
+#projectTextDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
 #inputForm {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+#projectInputForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
 }
@@ -69,6 +85,14 @@ button:hover {
     display: flex;
     flex-direction: row;
     border-radius: 3rem;
+}
+
+#newTaskDiv {
+    display: flex;
+}
+
+#projectFormDiv {
+    display: flex;
 }
 
 .todo-item {

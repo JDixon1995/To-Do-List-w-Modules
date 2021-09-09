@@ -21,6 +21,9 @@ function generatePage() {
 function generateForm() {
     mainDiv = document.getElementById('mainDiv');
 
+    newTaskDiv = document.createElement('div');
+    newTaskDiv.id = 'newTaskDiv';
+
     textDiv = document.createElement('div');
     textDiv.id = 'textDiv';
     titleText = document.createElement('h5');
@@ -71,8 +74,11 @@ function generateForm() {
     inputForm.appendChild(dueDateInput);
     inputForm.appendChild(priorityCheck);
 
-    mainDiv.appendChild(inputForm);
-    mainDiv.appendChild(submitButton);
+    newTaskDiv.appendChild(textDiv);
+    newTaskDiv.appendChild(inputForm);
+    newTaskDiv.appendChild(submitButton);
+
+    mainDiv.appendChild(newTaskDiv);
 
 }
 
@@ -81,12 +87,17 @@ function generateProjectForm() {
 
     projectFormDiv = document.createElement('div');
     projectFormDiv.id = 'projectFormDiv';
+    projectInputForm = document.createElement('form');
+    projectInputForm.id = 'projectInputForm';
     newProjectInput = document.createElement('input');
     newProjectInput.id = 'newProjectInput';
     newProjectDueDateInput = document.createElement('input');
     newProjectDueDateInput.type = 'date';
+    projectInputForm.appendChild(newProjectInput);
+    projectInputForm.appendChild(newProjectDueDateInput);
 
     projectTextDiv = document.createElement('div');
+    projectTextDiv.id = 'projectTextDiv';
     projectText = document.createElement('h5');
     projectText.innerText = 'New Project';
     projectDueDate = document.createElement('h5');
@@ -96,8 +107,7 @@ function generateProjectForm() {
     projectTextDiv.appendChild(projectDueDate);
 
     projectFormDiv.appendChild(projectTextDiv);
-    projectFormDiv.appendChild(newProjectInput);
-    projectFormDiv.appendChild(newProjectDueDateInput);
+    projectFormDiv.appendChild(projectInputForm);
     mainDiv.appendChild(projectFormDiv)
 }
 
