@@ -1,5 +1,3 @@
-const projectArray1 = [];
-
 function generatePage() {
     contentDiv = document.getElementById('content');
 
@@ -85,6 +83,9 @@ function generateForm() {
 function generateProjectForm() {
     mainDiv = document.getElementById('mainDiv');
 
+    newProjectDiv = document.createElement('div');
+    newProjectDiv.id = 'newProjectDiv';
+
     projectFormDiv = document.createElement('div');
     projectFormDiv.id = 'projectFormDiv';
     projectInputForm = document.createElement('form');
@@ -103,12 +104,21 @@ function generateProjectForm() {
     projectDueDate = document.createElement('h5');
     projectDueDate.innerText = 'Project Due Date';
 
+    projectSubmitButton = document.createElement('button');
+    projectSubmitButton.innerText = 'Submit Project';
+    projectSubmitButton.id = 'projectSubmitButton';
+
     projectTextDiv.appendChild(projectText);
     projectTextDiv.appendChild(projectDueDate);
 
     projectFormDiv.appendChild(projectTextDiv);
     projectFormDiv.appendChild(projectInputForm);
-    mainDiv.appendChild(projectFormDiv)
+
+    newProjectDiv.appendChild(projectTextDiv);
+    newProjectDiv.appendChild(projectInputForm);
+    newProjectDiv.appendChild(projectSubmitButton);
+
+    mainDiv.appendChild(newProjectDiv);
 }
 
 module.exports = { generatePage, generateForm, generateProjectForm};
